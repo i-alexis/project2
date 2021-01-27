@@ -49,6 +49,10 @@ function removeClassYeet(elementid){
         document.getElementById("shower")
         .style.display="none"
     }
+    if(elementid === "Next3"){
+        document.getElementById("next3")
+        .style.display="none"
+    }
 }
 
 // let choice1 = document.getElementById("tomorrow")

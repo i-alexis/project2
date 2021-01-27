@@ -5,6 +5,11 @@ body{
     margin-bottom: 40px;
 
 }
+h1{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bolder;
+    font-size: 30pt;  
+}
 header{
     font-family: 'Secular One', sans-serif;
     font-weight: bolder;
