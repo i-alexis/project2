@@ -4,8 +4,7 @@ function removeClassYeet(elementid){
     if(elementid === "goToPark"){
         document.getElementById("somewhereelse")
         .style.display="none"
-    }
-    if(elementid === "goSomewhereElse"){
+    } else if(elementid === "goSomewhereElse"){
         document.getElementById("park")
         .style.display="none"
     }
@@ -13,37 +12,41 @@ function removeClassYeet(elementid){
     if(elementid === "Ignore"){
         document.getElementById("dontignore")
         .style.display="none"
-    }
-    if(elementid === "dontIgnore"){
+    } else if(elementid === "dontIgnore"){
         document.getElementById("ignore")
         .style.display="none"
     }
-    if(elementid === "goSomewhereElse"){
-        document.getElementById("park")
+
+    if(elementid === "doHomework"){
+        document.getElementById("spore")
+        .style.display="none"
+        document.getElementById("wip")
+        .style.display="none"
+    } else if(elementid === "playSpore"){
+        document.getElementById("wip")
+        .style.display="none"
+        document.getElementById("hw")
+        .style.display="none"
+    } else if(elementid === "worksInProgress"){
+        document.getElementById("hw")
+        .style.display="none"
+        document.getElementById("spore")
         .style.display="none"
     }
-    if(elementid === "goSomewhereElse"){
-        document.getElementById("park")
+
+    if(elementid === "eatApple"){
+        document.getElementById("no")
+        .style.display="none"
+    } else if(elementid === "eatNothing"){
+        document.getElementById("yes")
         .style.display="none"
     }
-    if(elementid === "goSomewhereElse"){
-        document.getElementById("park")
+
+    if(elementid === "yesShower"){
+        document.getElementById("dontshower")
         .style.display="none"
-    }
-    if(elementid === "goSomewhereElse"){
-        document.getElementById("park")
-        .style.display="none"
-    }
-    if(elementid === "goSomewhereElse"){
-        document.getElementById("park")
-        .style.display="none"
-    }
-    if(elementid === "goSomewhereElse"){
-        document.getElementById("park")
-        .style.display="none"
-    }
-    if(elementid === "goSomewhereElse"){
-        document.getElementById("park")
+    } else if(elementid === "noShower"){
+        document.getElementById("shower")
         .style.display="none"
     }
 }

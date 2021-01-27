@@ -96,7 +96,7 @@
         </section>
 
         <section id="eatLunch" class="yeet">
-            <h2>back home.</h2>
+            <h2>lunch</h2>
             <p>
                 It’s half past 12. <br>
                 You jog downstairs to help Mom prepare lunch.<br>
@@ -108,12 +108,32 @@
                 What will you do?
 
             </p>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
+            <button onclick="removeClassYeet('doHomework')" id="hw">Homework</button>
+            <button onclick="removeClassYeet('playSpore')" id="spore">Game</button>
+            <button onclick="removeClassYeet('worksInProgress')" id="wip">Work on old projects</button>      
         </section>
 
-        <section id="goHome" class="yeet">
-            <h2>back home.</h2>
+        <section id="doHomework" class="yeet">
+            <h2>homework.</h2>
+            <p>
+                You open your laptop and take a look at the assignment you’re supposed to be doing.<br>
+                Brain fog hits you like a bus, but you are too stubborn to go get some coffee or do anything at all to fix it. You decide instead to just do the damn thing.<br>
+                Three hours later, you are still struggling to do the damn thing, but at least you’ve made some progress, which is better than none.<br>
+            </p>
+            <button onclick="removeClassYeet('4pm')" id="next">==></button>    
+        </section>
+
+        <section id="playSpore" class="yeet">
+            <h2>play a game.</h2>
+            <p>
+                The ultimate cure for boredom is creating unsettling fantasy creatures and populating alien worlds with them. You open your laptop and fire up SPORE.<br>
+                It’s been 12 years since the game’s release, and not once in that time have you gotten tired of it. <br>
+                You spend the next few hours installing mods and testing a shiny new array of features.<br>
+            </p>
+            <button onclick="removeClassYeet('4pm')" id="next">==></button>        </section>
+
+        <section id="worksInProgress" class="yeet">
+            <h2>work on old projects.</h2>
             <p>
                 It's around 11 AM. <br>
                 The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
@@ -122,51 +142,82 @@
                 at your conscious in the back of your head.<br>
                 Ignore it?
             </p>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
+            <button onclick="removeClassYeet('4pm')" id="next">==></button>        </section>
+
+        <section id="4pm" class="yeet">
+            <h2>4 pm.</h2>
+            <p>
+                It’s about 4 in the afternoon.<br>
+                This is the worst time of the day: it feels like the sky outside is mocking you. “Look how late it’s getting,” it says. “There’s so little daylight left and you’ve barely gotten anything done…”<br>
+                Sometimes you feel like 4 PM should be illegal.<br>
+                <br>
+                You feel kind of peckish.<br>
+                Eat a snack?<br>
+            </p>
+            <button onclick="removeClassYeet('eatApple')" id="yes">Eat</button>
+            <button onclick="removeClassYeet('eatNothing')" id="no">Don't eat</button>
+        </section>
+        <section id="eatApple" class="yeet">
+            <h2>eat a snack.</h2>
+            <p>
+                You head to the kitchen and check the refrigerator.<br>
+                A choice apple sits in the fruit drawer. You proceed to clean it and slice it into quarters, cutting out the seeds and stem.<br>
+                The taste is full of nostalgia. You remember that there was a time in your life when you would eat something like five apples a day.<br>
+                Who the hell has time to eat five of these in a day?<br>
+                Where were you getting all these apples?<br>
+                Are these questions even worth asking?<br>
+                <br>
+                You finish the apple and clean the bowl.<br>
+                <br>
+                Dinner is in two hours. <br>
+                Take a shower?<br>
+
+            </p>
+            <button onclick="removeClassYeet('yesShower')" id="shower">Shower</button>
+            <button onclick="removeClassYeet('noShower')" id="dontshower">Don't shower</button>
+        </section>
+        <section id="eatNothing" class="yeet">
+            <h2>don't eat.</h2>
+            <p>
+                You decide not to eat a snack and instead wait for dinner. Instead, you pour yourself a cup of coffee and eat a few pistachios to take the edge off. <br>
+                Since you’re not doing anything right now, it might be a good time to do some self-care.<br>
+                Take a shower?<br>
+
+            </p>
+            <button onclick="removeClassYeet('yesShower')" id="shower">Shower</button>
+            <button onclick="removeClassYeet('noShower')" id="dontshower">Don't shower</button>        
         </section>
 
-        <section id="goHome" class="yeet">
-            <h2>back home.</h2>
+        <section id="yesShower" class="yeet">
+            <h2>eat a snack.</h2>
             <p>
-                It's around 11 AM. <br>
-                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
-                You make your bed and wonder what's for lunch.<br>
-                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
-                at your conscious in the back of your head.<br>
-                Ignore it?
-            </p>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
-        </section>
+                You head to the kitchen and check the refrigerator.<br>
+                A choice apple sits in the fruit drawer. You proceed to clean it and slice it into quarters, cutting out the seeds and stem.<br>
+                The taste is full of nostalgia. You remember that there was a time in your life when you would eat something like five apples a day.<br>
+                Who the hell has time to eat five of these in a day?<br>
+                Where were you getting all these apples?<br>
+                Are these questions even worth asking?<br>
+                <br>
+                You finish the apple and clean the bowl.<br>
+                <br>
+                Dinner is in two hours. <br>
+                Take a shower?<br>
 
-        <section id="goHome" class="yeet">
-            <h2>back home.</h2>
-            <p>
-                It's around 11 AM. <br>
-                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
-                You make your bed and wonder what's for lunch.<br>
-                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
-                at your conscious in the back of your head.<br>
-                Ignore it?
             </p>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
-        </section>
+            <button onclick="removeClassYeet('yesShower')" id="shower">Shower</button>
+            <button onclick="removeClassYeet('noShower')" id="dontshower">Don't shower</button>
+        </section>  
+        <section id="noShower" class="yeet">
+            <h2>don't shower.</h2>
+            <p>
+                You decide not to shower. You just had wash day after all, so it would probably be a good idea to wait another day so your hair doesn’t dry out.<br> 
+                You wonder how much time you’ve spent worrying about your hair that could have been used to do other things. You find yourself vaguely wishing you were bald.<br>
+                Mom is doing the online equivalent of window shopping. You pull up a chair next to her and the two of you make it a point to comment on the weirdest items you can find.<br>
+            </p>
+            <button onclick="removeClassYeet('yesShower')" id="shower">Shower</button>
+            <button onclick="removeClassYeet('noShower')" id="dontshower">Don't shower</button>
+        </section>  
 
-        <section id="goHome" class="yeet">
-            <h2>back home.</h2>
-            <p>
-                It's around 11 AM. <br>
-                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
-                You make your bed and wonder what's for lunch.<br>
-                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
-                at your conscious in the back of your head.<br>
-                Ignore it?
-            </p>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
-            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
-        </section>
         <script src="scripts.js" defer ></script>
     </body>
 </html>
