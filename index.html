@@ -2,26 +2,171 @@
 <html>
     <head>
         <title>DAY IN THE LIFE</title>
+        
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
     </head>
     <body>
-        <script src="scripts.js"></script>
+        
         <header>
             day in the life
         </header>
-        <h2>morning</h2>
-        <p>
-            It’s somewhere in the vicinity of 9 AM.<br> 
-            You cannot hear his voice, or his breathing. The call must have died at some point overnight, as usual. A quick look at your phone tells you this is true.<br>
-            The bed is too damn comfortable but you roll out anyway.<br>
-        </p>
-        <p>
-            Breakfast is standard fare.
-            You deliberate for 15 minutes before settling on the same exact breakfast you’ve been eating for the last x months: two eggs and two pieces of canadian bacon. 
-            A pinch of salt and lord knows how much pepper on the eggs. <br> Shake things up and add a sweet potato?
-        </p>
-        <button onclick="window.location='potato.html'">Maybe tomorrow</button>
+
+        <section id="morning" class="unyeet">
+            <h2>morning</h2>
+            <p>
+                It’s somewhere in the vicinity of 9 AM.<br> 
+                You cannot hear his voice, or his breathing. The call must have died at some point overnight, as usual. A quick look at your phone tells you this is true.<br>
+                The bed is too damn comfortable but you roll out anyway.<br>
+            </p>
+            <p>
+                Breakfast is standard fare.
+                You deliberate for 15 minutes before settling on the same exact breakfast you’ve been eating for the last x months: two eggs and two pieces of canadian bacon. 
+                A pinch of salt and lord knows how much pepper on the eggs. <br> Shake things up and add a sweet potato?
+            </p>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="tomorrow">Maybe tomorrow</button>
+        </section>
+
+        <section id="maybeTomorrow" class="yeet">
+            <h2>maybe tomorrow.</h2>
+            <p>
+                No sweet potato today. It’ll probably be tastier tomorrow.<br>
+                You fail to consider that it has been the same level of tasty since the time it was cooked.<br>
+                A cup of coffee. You chase it down with some tea, and then some toothpaste.<br>
+                It’s a nice day for a drive, just like any other day when it isn’t raining or snowing.<br>
+                Where to?<br>
+            </p>
+            <button onclick="removeClassYeet('goToPark')" id="park">The park</button>
+            <button onclick="removeClassYeet('goSomewhereElse')" id="somewhereelse">Somewhere else?</button>
+        </section>
+
+        <section id="goToPark"  class="yeet">
+            <h2>the park.</h2>
+            <p>
+                You blast some tunes in the car as you do a lap around the park.<br>There are way too many people out here today, but other than that, the view is beautiful.
+            </p>
+            <button onclick="removeClassYeet('goHome')" id="home1">Go back home.</button>    
+        </section>
+
+        <section id="goSomewhereElse" class="yeet">
+            <h2>go somewhere else.</h2>
+            <p>
+                You turn up the music and drive wherever impulse takes you.<br>
+                A few minutes later, you have no idea where the hell you are.
+                
+            </p>
+            <button onclick="removeClassYeet('goHome')" id="home2">
+                Go back home.
+            </button>    
+        </section>
+
+        <section id="goHome" class="yeet">
+            <h2>back home.</h2>
+            <p>
+                It's around 11 AM. <br>
+                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
+                You make your bed and wonder what's for lunch.<br>
+                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
+                at your conscious in the back of your head.<br>
+                Ignore it?
+            </p>
+            <button onclick="removeClassYeet('Ignore')" id="ignore">Ignore</button>
+            <button onclick="removeClassYeet('dontIgnore')" id="dontignore">Don't ignore</button>    
+        </section>
+
+        <section id="Ignore" class="yeet">
+            <h2>ignore it.</h2>
+            <p>
+                You ignore the thoughts creeping up on you. You are not about to ruin your day this early on by feeling bad about something you have no control over.
+            </p>
+            <button onclick="removeClassYeet('eatLunch')" id="lunch">Eat lunch.</button>   
+        </section>
+
+        <section id="dontIgnore" class="yeet">
+            <h2>don't ignore it.</h2>
+            <p>
+                It’s going to be one of those days.<br>
+                You fish your resistance bands and a PVC pipe out of your closet and set up your makeshift home gym.<br>
+                Headphones in.<br>
+                You go through the motions, trying to feel the burn. You’d rather focus on that than the other things bugging you right now.<br>
+
+            </p>
+            <button onclick="removeClassYeet('eatLunch')" id="lunch">Eat lunch.</button>    
+        </section>
+
+        <section id="eatLunch" class="yeet">
+            <h2>back home.</h2>
+            <p>
+                It’s half past 12. <br>
+                You jog downstairs to help Mom prepare lunch.<br>
+                The right microwave settings and seasoning combinations for whatever it is you’re cooking are ingrained in your muscle memory. Meals have begun to feel like math.<br>
+                Your family eats and chats about whatever is interesting today. Your parents talk about work, about the inefficient systems that make their jobs that much harder. <br>
+                Everyone trades banter around the table. Good food, good times.<br>
+                After everyone eats their fill, you help clear the table and go back up to your room.<br>
+                The next half of your day has begun. <br>
+                What will you do?
+
+            </p>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
+        </section>
+
+        <section id="goHome" class="yeet">
+            <h2>back home.</h2>
+            <p>
+                It's around 11 AM. <br>
+                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
+                You make your bed and wonder what's for lunch.<br>
+                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
+                at your conscious in the back of your head.<br>
+                Ignore it?
+            </p>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
+        </section>
+
+        <section id="goHome" class="yeet">
+            <h2>back home.</h2>
+            <p>
+                It's around 11 AM. <br>
+                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
+                You make your bed and wonder what's for lunch.<br>
+                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
+                at your conscious in the back of your head.<br>
+                Ignore it?
+            </p>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
+        </section>
+
+        <section id="goHome" class="yeet">
+            <h2>back home.</h2>
+            <p>
+                It's around 11 AM. <br>
+                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
+                You make your bed and wonder what's for lunch.<br>
+                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
+                at your conscious in the back of your head.<br>
+                Ignore it?
+            </p>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
+        </section>
+
+        <section id="goHome" class="yeet">
+            <h2>back home.</h2>
+            <p>
+                It's around 11 AM. <br>
+                The sun is already in that uncomfortable spot in the sky where it feels like 3 PM and 10 AM at the same time.<br>
+                You make your bed and wonder what's for lunch.<br>
+                At the thought of food your torso begins to feel a bit too big. Full and hollow at the same time. <br>Something prods
+                at your conscious in the back of your head.<br>
+                Ignore it?
+            </p>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="ignore">Ignore</button>
+            <button onclick="removeClassYeet('maybeTomorrow')" id="dontIgnore">Don't ignore</button>    
+        </section>
+        <script src="scripts.js" defer ></script>
     </body>
 </html>

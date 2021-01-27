@@ -2,6 +2,7 @@ body{
     background-color: lightgray;
     color: black;
     font-size: 16pt;
+    margin-bottom: 40px;
 
 }
 header{
@@ -24,6 +25,9 @@ a{
     float:right;
     margin-right: 30px;
 }
+section{
+    display: block;
+}
 button{
     border-radius: 0;
     border: 0;
@@ -38,4 +42,7 @@ button:hover{
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
     background-color: rgb(95, 95, 95);
+}
+.yeet{
+    display:none;
 }
